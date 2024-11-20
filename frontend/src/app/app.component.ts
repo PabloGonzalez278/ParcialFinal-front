@@ -5,11 +5,10 @@ import { routes } from './app.routes';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet], // Usa RouterOutlet para soportar el enrutamiento
+  imports: [RouterOutlet],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  providers: [provideRouter(routes)], // Proporciona las rutas aquí
 })
 export class AppComponent {
   title = 'frontend';
 }
+

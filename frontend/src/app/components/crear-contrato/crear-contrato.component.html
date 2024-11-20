@@ -1,0 +1,41 @@
+<h2>Crear Contrato</h2>
+<label>
+    Valor:
+    <input type="number" #valor name="valor" />
+  </label><br />
+  
+<form (submit)="crearContrato(identificador.value, valor.value, nombreContratante.value, documentoContratante.value, nombreContratista.value, documentoContratista.value, fechaInicial.value, fechaFinal.value)">
+  <label>
+    Identificador:
+    <input #identificador name="identificador" />
+  </label><br />
+  <label>
+    Valor:
+    <input type="number" #valor name="valor" />
+  </label><br />
+  <label>
+    Nombre Contratante:
+    <input #nombreContratante name="nombreContratante" />
+  </label><br />
+  <label>
+    Documento Contratante:
+    <input #documentoContratante name="documentoContratante" />
+  </label><br />
+  <label>
+    Nombre Contratista:
+    <input #nombreContratista name="nombreContratista" />
+  </label><br />
+  <label>
+    Documento Contratista:
+    <input #documentoContratista name="documentoContratista" />
+  </label><br />
+  <label>
+    Fecha Inicial:
+    <input type="date" #fechaInicial name="fechaInicial" />
+  </label><br />
+  <label>
+    Fecha Final:
+    <input type="date" #fechaFinal name="fechaFinal" />
+  </label><br />
+  <button type="submit">Crear Contrato</button>
+</form>
